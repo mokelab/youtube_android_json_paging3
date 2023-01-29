@@ -55,6 +55,7 @@ dependencies {
     val composeBom = platform("androidx.compose:compose-bom:2023.01.00")
     implementation(composeBom)
     androidTestImplementation(composeBom)
+    implementation(platform("com.squareup.okhttp3:okhttp-bom:4.10.0"))
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.5.1")
@@ -68,6 +69,7 @@ dependencies {
     implementation("com.google.dagger:hilt-android:2.44.2")
     kapt("com.google.dagger:hilt-android-compiler:2.44.2")
     implementation("androidx.hilt:hilt-navigation-compose:1.1.0-alpha01")
+    implementation("com.squareup.okhttp3:okhttp")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
